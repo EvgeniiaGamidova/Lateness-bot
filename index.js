@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { Bot, GrammyError, HttpError } = require('grammy');
 
-const bot = new Bot(BOT_API_KEY);
+const bot = new Bot(process.env.BOT_API_KEY);
 
 bot.api.setMyCommands([
   {
